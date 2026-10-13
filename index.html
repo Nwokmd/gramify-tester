@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111310">
+  <meta name="description" content="Gabung pengujian Gramify. Bergabung ke Google Group, setuju ikut pengujian, lalu instal melalui Google Play.">
+  <title>Gramify — Pengujian Aplikasi</title>
+  <style>
+    :root {
+      --bg: #111310;
+      --card: #20211C;
+      --gold: #D6B66B;
+      --gold-light: #E8D29B;
+      --text: #F5F0E3;
+      --muted: #B8B5A9;
+      --border: #49402B;
+      --icon-bg: #353024;
+    }
+	.logo-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at 50% -18%, #302b1d 0%, var(--bg) 58%);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    .wrap { width: min(100% - 32px, 820px); margin-inline: auto; }
+    header { padding: 25px 0 12px; }
+    .brand { display: flex; align-items: center; gap: 13px; }
+    .logo {
+      display: grid; place-items: center; width: 52px; height: 52px; flex: 0 0 52px;
+      border-radius: 16px; background: linear-gradient(145deg, #E8D29B, #B89545);
+      color: #111310; font-size: 29px; font-weight: 900; letter-spacing: -2px;
+      box-shadow: 0 5px 22px #0008;
+    }
+    .brand-name { color: var(--gold-light); font-size: 25px; font-weight: 800; line-height: 1.15; }
+    .brand-sub { margin-top: 5px; color: var(--muted); font-size: 10px; letter-spacing: 2px; }
+    .hero { padding: 42px 0 24px; text-align: center; }
+    .eyebrow {
+      display: inline-block; padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px;
+      background: #29271f; color: var(--gold); font-size: .76rem; font-weight: 800; letter-spacing: 1.4px;
+    }
+    h1 { margin: 18px auto 12px; max-width: 680px; color: var(--gold-light); font-size: clamp(2rem, 7vw, 3.1rem); line-height: 1.12; letter-spacing: -.045em; }
+    .intro { max-width: 610px; margin: 0 auto; color: var(--muted); font-size: 1rem; }
+    .panel {
+      max-width: 720px; margin: 29px auto 0; padding: clamp(19px, 4vw, 30px);
+      border: 1px solid var(--border); border-radius: 24px; background: var(--card);
+      box-shadow: 0 20px 55px #0005; text-align: left;
+    }
+    .steps { display: grid; gap: 19px; }
+    .step { display: grid; grid-template-columns: 43px 1fr; gap: 13px; align-items: start; }
+    .number {
+      display: grid; place-items: center; width: 42px; height: 42px; border-radius: 13px;
+      background: var(--icon-bg); border: 1px solid var(--border); color: var(--gold); font-weight: 900;
+    }
+    .step h2 { margin: 0 0 3px; color: var(--text); font-size: 1.02rem; }
+    .step p { margin: 0; color: var(--muted); font-size: .93rem; }
+    .actions { display: grid; gap: 11px; margin-top: 26px; }
+    .btn {
+      display: flex; justify-content: center; align-items: center; gap: 9px; width: 100%; min-height: 52px;
+      padding: 13px 17px; border: 1px solid transparent; border-radius: 14px; text-align: center;
+      text-decoration: none; font-weight: 800; transition: transform .15s, filter .15s;
+    }
+    .btn:hover { transform: translateY(-1px); filter: brightness(1.06); }
+    .btn-gold { background: var(--gold); color: #17160f; }
+    .btn-outline { background: #29271f; border-color: var(--border); color: var(--gold-light); }
+    .btn-light { background: var(--gold-light); color: #17160f; }
+    .notice { margin: 17px 0 0; color: var(--muted); text-align: center; font-size: .83rem; }
+    .section-title { margin: 0 0 15px; text-align: center; color: var(--gold-light); font-size: 1.45rem; }
+    .faq { padding: 30px 0 43px; }
+    .faq-card { margin-top: 12px; padding: 17px 19px; border: 1px solid var(--border); border-radius: 16px; background: var(--card); }
+    .faq-card h3 { margin: 0 0 5px; color: var(--gold); font-size: 1rem; }
+    .faq-card p { margin: 0; color: var(--muted); font-size: .92rem; }
+    footer { padding: 21px 0 30px; border-top: 1px solid var(--border); color: var(--muted); text-align: center; font-size: .84rem; }
+    footer strong { color: var(--gold); }
+    @media (min-width: 620px) { .actions { grid-template-columns: 1fr 1fr; } .btn-light { grid-column: 1 / -1; } .hero { padding-top: 52px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    
+	<div class="brand">
+	  <img
+		src="gramify.png"
+		alt="Logo Gramify"
+		class="logo-image"
+	  >
+	  <span>Gramify</span>
+	</div>
+
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">PROGRAM PENGUJIAN</span>
+      <h1>Bantu Gramify menjadi lebih baik</h1>
+      <p class="intro">Bergabunglah sebagai tester untuk membantu kami menguji Gramify. Ikuti tiga langkah di bawah ini menggunakan akun Google yang sama.</p>
+
+      <div class="panel">
+        <div class="steps">
+          <div class="step"><span class="number">1</span><div><h2>Gabung Google Group</h2><p>Bergabunglah ke grup tester Gramify terlebih dahulu.</p></div></div>
+          <div class="step"><span class="number">2</span><div><h2>Setuju ikut pengujian</h2><p>Buka halaman pengujian Google Play dan tekan tombol untuk bergabung sebagai tester.</p></div></div>
+          <div class="step"><span class="number">3</span><div><h2>Instal Gramify</h2><p>Setelah terdaftar sebagai tester, buka halaman Gramify di Google Play lalu instal aplikasi.</p></div></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-gold" data-link="group" href="#">① Gabung Google Group</a>
+          <a class="btn btn-outline" data-link="optin" href="#">② Setuju &amp; ikut pengujian</a>
+          <a class="btn btn-light" data-link="play" href="#">↓ Buka Gramify di Google Play</a>
+        </div>
+                <p class="notice">Pastikan ketiga langkah menggunakan akun Google yang sama.</p>
+
+        <div class="faq-card" style="margin-top: 18px;">
+          <h3>🔒 Data kamu tetap aman</h3>
+          <p>Data yang kamu simpan selama masa pengujian Gramify dirancang untuk tetap tersedia saat aplikasi dirilis ke publik nanti. Kami berupaya menjaga data tetap aman dan tidak terhapus hanya karena aplikasi beralih dari masa pengujian ke versi publik. Pastikan kamu menggunakan akun Google yang sama agar data yang tersimpan di akunmu tetap dapat diakses.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="section-title">Sebelum memulai</h2>
+      <div class="faq-card"><h3>Apakah cukup bergabung ke grup?</h3><p>Belum. Kamu juga perlu membuka tautan pengujian dan menyatakan ikut serta, lalu menginstal aplikasi melalui Google Play.</p></div>
+      <div class="faq-card"><h3>Tautan tidak terbuka?</h3><p>Admin Gramify perlu mengisi tautan Google Group, tautan ikut pengujian dari Play Console, dan tautan listing Play Store pada bagian LINKS di file ini.</p></div>
+    </section>
+  </main>
+
+  <footer class="wrap">Terima kasih sudah membantu pengujian <strong>Gramify</strong>.</footer>
+
+  <script>
+    // Ganti tiga nilai ini dengan tautan asli sebelum menerbitkan halaman di GitHub Pages.
+    const LINKS = {
+      group: "https://groups.google.com/g/penggunagramify",
+      optin: "https://play.google.com/apps/testing/org.aplikasi.pencatatbarang",
+      play: "https://play.google.com/store/apps/details?id=org.aplikasi.pencatatbarang"
+    };
+
+    document.querySelectorAll("[data-link]").forEach((button) => {
+      const key = button.dataset.link;
+      const url = LINKS[key];
+      if (url && /^https:\/\/\S+/.test(url) && !url.includes("GANTI_DENGAN")) {
+        button.href = url;
+        button.target = "_blank";
+        button.rel = "noopener noreferrer";
+      } else {
+        button.addEventListener("click", (event) => {
+          event.preventDefault();
+          alert("Tautan ini belum diatur. Edit bagian LINKS di file index.html terlebih dahulu.");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
